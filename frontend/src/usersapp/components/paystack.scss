@@ -1,0 +1,47 @@
+@import "../../app.scss";
+
+.paystack{
+    background-color: var(--main-color);
+    display: flex;
+    height: 100vh;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+
+     .donate-text{
+         margin-top: 40px;
+         color: white;
+         @include mobile {
+            font-size: 20px;
+            margin-left: 20px;
+          }
+     }
+
+     .donate-input{
+        margin-bottom: 10px;
+        width: 90%;
+        font-size: 18px;
+        padding: 7px;
+    }
+    
+    .donate-nput:focus{
+        outline: none;
+    }
+
+     .donate-button{
+         background-color: #1872f2;
+         color: white;
+         border: none;
+         padding: 8px;
+         cursor: pointer;
+     }
+    .donate-card{
+        margin-top: 90px;
+
+        @include mobile {
+            margin-left: 20px;
+
+            
+          }
+    }
+}

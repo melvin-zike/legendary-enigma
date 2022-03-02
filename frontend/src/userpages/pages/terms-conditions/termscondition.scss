@@ -1,0 +1,17 @@
+@import "../../../app.scss";
+
+.tandcWrapper{
+    margin-top: 50px;
+    padding-top: 40px;
+    width: 90%;
+}
+.terms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 96%;
+    margin: auto;
+    padding-bottom: 40px;
+}

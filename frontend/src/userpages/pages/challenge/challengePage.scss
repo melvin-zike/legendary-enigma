@@ -1,0 +1,67 @@
+@import "../../../app.scss";
+
+.challenge{
+    background-color: var(--main-color);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+}
+
+.challenge-main{
+    flex: 9;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    align-items: center;
+    @include mobile {
+        margin-bottom: 5px;
+        }
+}
+.challenge-item-title{
+    color: white;
+
+    @include mobile {
+        font-size: 16px;
+        width: 70%;
+       margin-left: 80px;
+        }
+    
+}
+.challenge-page-title{
+    color: white;
+    margin-top: 20px;
+    @include mobile {
+        width: 90%;
+       margin-left: 90px;
+       font-size: 16px;
+        }
+}
+.challenge-page-desc{
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    @include mobile {
+        width: 70%;
+       margin-left: 80px;
+       margin-bottom: 10px;
+        }
+}
+.challenge-page-prize{
+    color: white;
+    margin-top: 10px;
+    @include mobile {
+        margin-top: 10px;
+       margin-left: 80px;
+       margin-top: 10px;
+        }
+}
+.challenge-page-img{
+    width: 300px;
+    height: 300px;
+
+    @include mobile {
+        font-size: 16px;
+        width: 70%;
+       margin-left: 80px;
+        }
+}

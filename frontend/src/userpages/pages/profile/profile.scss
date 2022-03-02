@@ -1,0 +1,289 @@
+@import "../../../app.scss";
+
+html,body{
+    overflow-x: hidden;
+}
+.profile{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: var(--main-color);
+    color: white;
+    padding-bottom: 200px;
+
+
+    @include mobile {
+        width: 100%;
+        padding-bottom: 200px;
+      }
+
+      .side-div{
+          flex: 1
+      }
+  
+  
+}
+
+.profileRight{
+    flex: 4.5;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+      }
+  
+      @include tablet {
+        width: 100%;
+      
+      }
+      @include mobile-mini {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+      }
+}
+
+.profileRightTop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+    padding-right:40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    @include mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+  
+      @include tablet {
+        width: 100%;
+      
+      }
+      @include mobile-mini {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+      }
+    
+    
+}
+
+
+.profileCover{
+    // height: 180px;
+    flex: 1; 
+   
+}
+
+
+.profileCoverImg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+   background-color: gray;
+   
+
+   
+}
+
+.change-profile-btn{
+  position: absolute;
+  top: 200px;
+  margin-left: -105px;
+  background-color: teal;
+  border: 1px solid white;
+  color: white;
+}
+
+.profileImgContainer{
+  position: absolute;
+  margin-top: -350px;
+  margin-left: 10px;
+}
+
+.profileImg{
+width: 257px;
+ height: 356px;
+ border-radius: 5%;
+}
+
+
+.update-photo{
+  position: absolute;
+  margin-top: 340px;
+  margin-left: -20px;
+  cursor: pointer;
+  @include mobile {
+    cursor: pointer;  
+  margin-top: 236px;
+  margin-left: -16px;
+  z-index: 1;
+  }
+}
+
+.upload-profile-btn{
+  position: absolute;
+  margin-top: 80px;
+ margin-left: -100px;
+ background-color: var(--forth-color);
+ color: var(--text-color);
+ border: none;
+ cursor: pointer;
+}
+
+.following-bar{
+    display: flex;
+    position: relative;
+    left: 280px;
+    bottom: 350px;
+
+    @include mobile {
+        display: flex;
+        position: relative;
+        left: 180px;
+        bottom: 300px;
+      }
+}
+.follower-items{
+    margin: 10px;
+    
+}
+
+.profileUserImg{
+    width: 250px;
+    height: 350px;
+    border-radius: 5%;
+    object-fit: cover;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border: 3px solid white;
+    @include mobile {
+        width: 150px;
+        height: 250px;
+        border-radius: 5px;
+        object-fit: cover;
+        position: relative;
+        left: 15px;
+        top: 10px;
+        border: 3px solid white;
+      }
+    
+}
+
+.profileInfo{
+    
+    position: relative;
+    width: 350px;
+
+    align-items: flex-start;
+    margin-right: 60px;
+    margin-top: 10px;
+
+    @include mobile {
+        width: 300px;
+        margin-left: 14px;
+        margin-top: -39px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+  
+}
+
+.profileInfoName{
+    font-size: 28px;
+    position: absolute;
+    left: 485px;
+    top: 425px;
+
+    @include mobile {
+        font-size: 28px;
+        position: absolute;
+        left: 84px;
+        top: 322px;
+      }
+}
+
+.profile-donate{
+  background-color: var(--forth-color);
+  color: var(--text-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.profileInfoDesc{
+    width: 290px;
+    font-size: 14px;
+    background-color: var(--forth-color);
+    @include mobile {
+        font-size: 12px;
+        margin-top: 40px;
+      }
+
+}
+.profileInfoButton{
+
+  position: relative;
+  top: -260px;
+  left: 233px;
+   
+    @include mobile {
+      top: -220px;
+        margin-left: -93px;
+      }
+
+      .edit-button{
+        margin-left: 60px;
+        margin-top: -100px;
+          background-color: teal;
+          border: 1px solid white;
+         
+
+          @include mobile {
+            margin-top: 30px;
+          }
+    
+      }
+}
+.showvidbtn{
+  display: flex;
+  position: absolute;
+  width: 230px;
+  margin-top: -680px;
+  margin-left: 460px;
+}
+
+
+.profileRightBottom{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        margin-left: -70px;
+       
+      }
+
+    
+}
+.showvideos{
+  margin-right: 22px;
+}

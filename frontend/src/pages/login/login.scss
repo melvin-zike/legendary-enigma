@@ -1,0 +1,118 @@
+@import "../../app.scss";
+
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://images.pexels.com/photos/65718/pexels-photo-65718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      /* url("https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg"); */
+    background-size: cover;
+
+    
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 60%;
+        margin: auto;
+        align-items: center;
+      }
+}
+
+.msg-info-2{
+    color: #fff;
+    font-size: 22px;
+
+    @include mobile {
+        width: 250px;
+        font-size: 24px;
+      }   
+}
+
+.loginInputs{
+    margin-bottom: 15px;
+    width: 400px;
+    padding: 10px;
+    font-size: 18px;
+
+    @include mobile {
+        width: 250px;
+        margin-top: 10px;
+      }
+
+}
+
+.loginButton{
+    background-color: #1775ee;
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+
+    @include mobile {
+        width: 200px;
+        margin-left: 10px;
+        border-radius: 5px;
+      }
+}
+.loginForgot{
+    color: #1775ee;
+}
+
+.errorMessage{
+    color: red;
+    width: 70%;
+    display: none;
+  }
+  .errorMessage1{
+    color: red;
+    width: 70%;
+    display: none;
+  }
+  .errorMessage2{
+    color: red;
+    width: 70%;
+    display: none;
+  }
+  .errorMessage3{
+    color: red;
+    width: 70%;
+    display: none;
+  }
+
+.loginForgotlink{
+    text-decoration-line: none;
+}
+
+#emailInput:invalid[focused1="true"] ~ .errorMessage1{
+    display: block;
+  
+  }
+
+#passwordInput:invalid[focused2="true"] ~ .errorMessage2{
+    display: block;
+  
+  }
+  .dangerous-login{
+    background-color: red;
+    color: white;
+    font-size: 22px;
+  }
+  .success-login{
+    background-color: green;
+    color: white;
+    font-size: 22px;
+  }

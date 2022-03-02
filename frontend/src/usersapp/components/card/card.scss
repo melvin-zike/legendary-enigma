@@ -1,0 +1,14 @@
+@import "../../../app.scss";
+
+.text-blue{
+    list-style-type: none;
+}
+.post-list{
+    list-style-type: none;
+    margin-left: 80px;
+    margin-bottom: 10px;
+
+    @include mobile {
+        margin-left: 25px;
+        }
+}

@@ -1,0 +1,30 @@
+@import "../../../app.scss";
+  
+.feed{
+    flex:4.5;
+    margin-top: 80px;
+    margin-left: -20px;
+    @include mobile {
+        padding-right: 10px;
+     
+      }
+
+    .featured{
+        margin-left: 30px;
+        margin-top: -10px;
+    }
+    
+}
+
+.feedWrapper{
+    width: 500px;
+    @include mobile {
+        width: 415px;
+        margin-left: -10px;
+        
+      }
+    .lazyloading{
+        color: white;
+    }
+    
+}

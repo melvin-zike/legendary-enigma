@@ -1,0 +1,17 @@
+@import "../../../app.scss";
+
+.credit-card{
+
+    @include mobile {
+        width: 70%;
+      }
+
+      .rechargebtn{
+        cursor: pointer;
+      }
+
+      .credit-card{
+        width: 250px;
+      }
+}
+

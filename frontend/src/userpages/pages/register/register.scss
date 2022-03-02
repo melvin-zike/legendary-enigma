@@ -1,0 +1,283 @@
+@import "../../../app.scss";
+
+
+.register {
+  width: 100vw;
+  height: 100%;
+  display: flex; 
+  flex-direction: row;
+  margin-top: 50px;
+  background-color: var(--main-color);
+
+  @include mobile {
+    width: 100%;
+    color: white;
+  }
+}
+
+.registerWrapper {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  background-color: var(--mmain-color);
+
+}
+.registerWrapper2 {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  background-color: var(--main-color);
+  flex-direction: column;
+  @include mobile {
+    display: none;
+  }
+}
+
+ 
+
+.registerRight {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  /* margin-top: 90px; */
+  flex-direction: column;
+  background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://images.pexels.com/photos/65718/pexels-photo-65718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+
+}
+.dangerous{
+  background-color: red;
+  color: white;
+  font-size: 22px;
+}
+.success{
+  background-color: green;
+  color: white;
+  font-size: 22px;
+}
+ 
+.register-logo {
+  width: 200px;
+  height: 100px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.registerDesc {
+  font-size: 16px;
+  margin-top: 40px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.registerBox{
+  height: 100vh;
+  width: 60%;
+  margin-top: 80px;
+  padding: 2px;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  color: white;
+  flex-direction: column;  
+
+  @include mobile {
+    width: 90%;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.registerBox2{
+  height: 70vh;
+  width: 60%;
+  padding: 2px;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  color: white;
+  flex-direction: column;  
+}
+
+.terms{
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-around;
+  margin-top: -5px;
+  margin-bottom: -15px;
+  @include mobile {
+    margin-left: 49px;
+    width: 250px;
+    
+  }
+}
+
+.msg-info{
+margin-bottom: 30px;
+margin-top: 20px;
+
+@include mobile {
+  margin-top: 30px;
+}
+}
+
+.registerInput{
+    margin-bottom: 10px;
+    width: 70%;
+    font-size: 18px;
+
+    @include mobile {
+     
+    }
+}
+.emailInput{
+    margin-bottom: 10px;
+    width: 70%;
+    font-size: 18px;
+
+    @include mobile {
+     
+    }
+}
+.passwordInput{
+    margin-bottom: 10px;
+    width: 70%;
+    
+    font-size: 18px;
+
+    @include mobile {
+      
+    }
+}
+.password2Input{
+    margin-bottom: 10px;
+    width: 70%;
+   
+    font-size: 18px;
+
+    @include mobile {
+      
+    }
+}
+.errorMessage{
+  color: red;
+  width: 70%;
+  display: none;
+}
+.errorMessage1{
+  color: red;
+  width: 70%;
+  display: none;
+}
+.errorMessage2{
+  color: red;
+  width: 70%;
+  display: none;
+}
+.errorMessage3{
+  color: red;
+  width: 70%;
+  display: none;
+}
+.errorMessage5{
+  color: red;
+  width: 70%;
+  display: none;
+}
+
+.loginInput:invalid[focused="true"] ~ .errorMessage{
+  display: block;
+
+}
+.emailInput:invalid[focused1="true"] ~ .errorMessage1{
+  display: block;
+
+}
+.passwordInput:invalid[focused2="true"] ~ .errorMessage2{
+  display: block;
+
+}
+.password2Input:invalid[focused3="true"] ~ .errorMessage3{
+  display: block;
+
+}
+#phoneInput:invalid[focused5="true"] ~ .errorMessage5{
+  display: block;
+
+}
+
+.registerCountry{
+  width: 355px;
+  margin-bottom: 10px;
+}
+
+.registerInput:focus{
+    outline: none;
+}
+
+.registerButton{
+    height: 50px;
+    border-radius: 10px;
+    width: 20%;
+    border: none;
+    background-color: #1775ee;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: -20px;
+    cursor: pointer;
+
+    @include mobile {
+     width: 150px;
+     height: 35px;
+    }
+}
+
+.registerButton:focus{
+  outline: none;
+}
+
+.registerButton:disabled{
+  cursor: not-allowed;
+}
+
+.registerForgot{
+    text-align: center;
+    color: #1775ee;
+
+    
+}
+.registerForgotlinks{
+    text-decoration-line: none;
+
+    
+}
+
+.registerRegisterButton{
+    width: 100%;
+    align-self: center;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e09e3a;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+} 
+
+.registerLeft{
+  width: 100%;
+  margin: auto;
+}

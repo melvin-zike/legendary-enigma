@@ -1,0 +1,30 @@
+@import "../../../app.scss";
+
+.playground{
+    background-color: var(--main-color);
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    margin-top: 50px;
+
+    @include mobile {
+        width: 100%;
+        
+      }
+}
+.play-banner{
+    background-color: var(--main-color);
+    flex: 4.5;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    
+
+}
+.side-div{
+    flex: 1.5;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+}

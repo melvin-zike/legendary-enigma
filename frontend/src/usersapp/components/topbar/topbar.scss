@@ -1,0 +1,297 @@
+@import "../../../app.scss";
+
+.topbarContainer{
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid #333;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  position: fixed; 
+  top: 0;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(34, 34, 34, 0.98);
+    box-shadow: 0px 0px 16px -8px rgba(34, 34, 34, 0.98);
+  z-index: 999;
+
+  @include mobile {
+    width: 100%;
+    color: var(--text-color);
+  }
+  
+
+  .topbarLeft {
+    flex: 2; 
+
+    @include mobile {
+      flex: 1; 
+    }
+  }
+
+.search-drop{
+  margin-top: 120px;
+  width: 250px;
+  background-color: var(--text-color);;
+  color: var(--main-color);;
+  margin-left: 70px;
+  position: absolute;
+  border-radius: 10px;
+
+  
+}
+
+
+
+  .search-items-name{
+    margin-top: -15px;
+  }
+
+
+.search-hide{
+  display: none;
+}
+
+  
+  .logo {
+    width: 410px;
+    height:165px;
+    // width: 80px;
+    // height: 80px;
+    // font-size: 32px;
+    margin-left: 20px;
+    
+     margin-top: 27px;
+    // font-weight: bold;
+    // margin-left: 60px;
+    // color: var(--forth-color);
+    cursor: pointer;
+       
+    @include mobile {
+      display: none;
+    }
+  }
+  
+  .logo-mini{  
+    display: none;  
+    @include mobile {
+      display: block;
+    width: 110px;
+    height:50px;
+    
+    }
+  }
+  
+  .topbarCenter {
+    flex: 5;
+  }
+  
+  .searchbar {
+    width: 70%;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      width: 100%;
+      margin-left: 10px;
+      display: none;
+    }
+  }
+  
+  .searchIcon {
+    font-size: 20px !important;
+    margin-left: 10px;
+    @include mobile {
+      margin-left: 10px;
+    }
+  
+
+  }
+  
+  .searchInput {
+    position: relative;
+    background-color: #eee;
+    border: none;
+    width: 70%;
+
+    @include mobile {
+      margin-right: 10px;
+      width: 100%;
+    }
+  
+  }
+  
+  .searchInput:focus {
+    outline: none;
+  }
+  
+  .topbarRight {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-right: 50px;
+    color: #333;
+    @include mobile {
+      margin-right: 3px;
+      margin-left: 13px;
+    }
+
+    .patronbtn{
+      width: 150px;
+      margin-right: 10px;
+      padding: 10px;
+      background-color: var(--forth-color);
+      color: var(--text-color);
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+
+      @include mobile {
+        width: 100px;
+        font-size: 14px;
+        color: var(--main-color);
+        font-weight: 600;
+        padding: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+  }
+  
+  .topbarLink {
+    margin-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--forth-color);
+
+    .links{
+      text-decoration: none;
+    }
+
+    @include mobile {
+      margin: 4px;
+      color: var(--forth-color);
+    }
+  }
+  
+  .topbarIcons {
+    display: flex;
+  }
+
+  .chatsbadge{
+    @include mobile {
+      display: none;
+    }
+  }
+  .notice{
+    @include mobile {
+      color: var(--forth-color);
+    }
+  }
+  
+  .topbarIconItem {
+    margin-right: 25px;
+    cursor: pointer;
+    position: relative;
+    color: var(--forth-color);
+
+    @include mobile {
+      height: 10px;
+      width: 10px;
+      margin-bottom: 10px;
+      margin-right: 2px;
+      color: var(--forth-color);
+      
+    }
+  }
+  
+  .topbarIconBadge {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+
+     
+  }
+  
+  .topbarImg {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    @include mobile {
+      margin-left: 25px;
+    }
+  }
+  .topbarUserName{
+    margin-right: 50px;
+    margin-top: 7px;
+    color: white;
+    @include mobile {
+      display: none;
+    }
+}
+
+  .profile {
+    .options {
+      display: none;
+      background-color: var(--main-color);
+      color: white;
+      border-radius: 5px;
+    }
+    .drop-arrow{
+      color: white;
+    }
+  }
+
+
+.topbarnotifications{
+  padding: 5;
+  font-size: 14px;
+  margin-bottom: 5px;
+
+}
+.notification{
+  position: absolute;
+  top: 45px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  background-color: #ee005f;
+  color: white;
+  font-weight: 300;
+  padding: 20px;
+
+   .nbotton{
+     padding: 5px;
+     margin-top: 10px;
+     cursor: pointer;
+   }
+
+   .outside{
+    @include mobile {
+      display: block;
+      
+    }
+   }
+
+}
+
+}
+  
+  

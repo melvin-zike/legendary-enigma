@@ -1,0 +1,17 @@
+@import "../../../app.scss";
+  
+
+.homeContainer{
+    display: flex;
+    width: 70%;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    background-color: var(--main-color);
+    padding-bottom: 200px;
+
+    @include mobile {
+        width: 100%;
+      }
+    
+}

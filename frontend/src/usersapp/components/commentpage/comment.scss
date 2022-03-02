@@ -1,0 +1,76 @@
+@import "../../../app.scss";
+
+.wrapper{
+    display: flex;
+    height: 723px;
+
+    @include mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        }
+}
+
+.imagecontainer{
+    flex: 2;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+   
+}
+.watch{
+    width: 80%;
+    margin: auto;
+    height: 690px;
+    background-color: black;
+    
+}
+.back{
+    width: 80px;
+    color: white;
+    margin-right: -40px;
+}
+.video-comment{
+    width: 100%;
+    margin-top: -25px;
+    height: 100%;
+    padding-bottom: -100px;
+
+}
+
+.infocontainer{
+    flex: 1;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.comment-container{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 100%;
+    padding-top: 0px;
+    position: sticky;
+    background-color: #eee;
+}
+
+.postsingleTopLeft{
+    margin: 10px;
+}
+
+.commentsingle{
+    display: flex;
+}
+
+.comment_button{
+    margin: 10px;
+}
+
+.commentline{
+    background-color: #eee;
+    height: 2px;
+    
+}
+

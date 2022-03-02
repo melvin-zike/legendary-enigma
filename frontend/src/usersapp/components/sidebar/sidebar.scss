@@ -1,0 +1,127 @@
+@import "../../../app.scss";
+.sidebar1 {
+    flex: 2.5;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    background-color: var(--main-color);
+    color:var(--text-color);;
+    margin-right: 20px;
+
+    @include mobile {
+      padding: 3px;
+      position: fixed;
+    }
+    
+
+    .sidebarListItem.active, .sidebarListItem:hover{
+      background-color: #eee;
+      color: var(--main-color);
+      .sidebarIcon{
+        color: var(--main-color);
+      }
+     }
+    
+
+      
+      .sidebarWrapper {
+        padding: 20px;
+
+        @include mobile {
+          padding: 2px;
+        }
+      }
+      
+      .sidebarList {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      
+      .sidebarListItem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .sidebarListItemText{
+        color: var(--text-color);
+        
+        @include mobile {
+          display: none;
+        
+        }
+      }
+      .sidebarListItemText:hover{
+        color: black;
+
+      }
+      
+      .sidebarIcon {
+        margin-right: 15px;
+        color: var(--forth-color);
+
+        @include mobile {
+          margin-left: 15px;
+          
+        }
+      }
+      
+      .sidebarButton {
+        width: 150px;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 500;
+      }
+      
+      .sidebarHr {
+        margin: 20px 0;
+      }
+      
+      .sidebarFriendList {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .messengerLink{
+        display: flex;
+        text-decoration: none;
+        color: white;
+      }
+      .others{
+       
+        margin-top: -2px;
+      }
+
+      .rightbarTitle{
+        @include mobile {
+          display: none;
+         }
+      }
+
+      .rightbarFriendList{
+
+
+        @include mobile {
+         display: block;
+        }
+      }
+  }
+
+  .challengeLeft{
+   margin-left: 10px;
+  }
+
+  .sidebar1:hover{
+    overflow-y: scroll;
+  }
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: rgb(179, 179, 179);
+    }

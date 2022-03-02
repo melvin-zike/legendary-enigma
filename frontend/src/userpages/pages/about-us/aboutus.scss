@@ -1,0 +1,184 @@
+@import "../../../app.scss";
+
+.about-us{
+    display: flex;
+    margin-top: -10px;
+    background-color: var(--main-color);
+    width: 100%;
+    margin: auto;
+    @include mobile {
+      width: 100%;
+      padding: auto;
+    }
+
+    
+}
+
+.empower{
+    flex: 9;
+    position: relative;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    @include mobile {
+     
+    }
+
+}
+
+.about-img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 20px;
+
+    @include mobile {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        border-radius: 20px;
+        }
+  }
+
+  .about-banner-text{
+      position: absolute;
+      top: 150px;
+      left: 30px;
+      color: white;
+
+      @include mobile {
+        position: absolute;
+      top: 100px;
+      left: 10px;
+      color: white;
+      margin-right: 10px;
+        }
+  }
+
+  .about-donate{
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #1872f2;
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+      border: none;
+
+      @include mobile {
+        font-size: 12px;
+        padding: 5px;
+          }
+  }
+  .about-donate:hover{
+      background-color: white;
+      color: #1872f2;
+  }
+
+  .banner-inner-text{
+      margin-top: 10px;
+      @include mobile {
+      font-size: 15px;
+        }
+  }
+  .about-banner-inner-text{
+      margin-left: -610px;
+      @include mobile {
+        margin-left: -270px;
+      font-size: 15px;
+        }
+  }
+  .banner-history{
+      display: flex;
+      margin-bottom: 30px;
+
+  }
+  .about-icon{
+      flex: 1;
+      color: white;
+      background-color: #ee005f;
+      margin: 3px;
+      padding: 15px;
+  }
+
+  .about-gist{
+      display: flex;
+
+      @include mobile {
+        flex-direction: column;
+          }
+  }
+  .about-gist-text{
+      flex: 2;
+  }
+  .about-gist-text-text{
+    color: white;
+  }
+  .about-gist-para{
+      color: white;
+
+      @include mobile {
+        font-size: 16px;
+          }
+  }
+
+  .projects{
+      margin-top: 50px;
+        color: white;
+
+      
+  }
+  .our-project-text{
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+
+    .project-btn{
+        background-color:#ee005f;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+ }
+  .our-project-text2{
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+ }
+ 
+  
+  .about-gist-img{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .about-aside{
+    width: 90%;
+    align-items: center;
+  }
+  .about-aside-img{
+    width: 90%;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+  }
+
+  .our-products{
+      color: white;
+  }
+
+  .our-products-text{
+      color: white;
+      margin-bottom: 7px;
+  }
+  .about-social{
+      color: white;
+
+      .current-about-span{
+          cursor: pointer;
+      }
+  }
+
+
